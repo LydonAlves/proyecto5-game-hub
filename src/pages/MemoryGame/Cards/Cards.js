@@ -1,4 +1,4 @@
-import { flipCards } from '../GameLogic/flipCards/FlipCards'
+import { flipCards } from '../GameLogic/FlipCards/FlipCards'
 import './Cards.css'
 
 export const createCards = (section) => {
