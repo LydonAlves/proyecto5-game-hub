@@ -1,5 +1,5 @@
 import { letterChosen } from '../LetterChosen/LetterChosen'
-import './lettersToChoose.css'
+import './LettersToChoose'
 
 export const lettersToChoose = (gameLogicDiv) => {
   const alphabet = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('')
