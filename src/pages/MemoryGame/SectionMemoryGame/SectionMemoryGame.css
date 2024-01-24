@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PokemonHollow';
-  src: url('../../../../public/fonts/pokemonFonts/Pokemon-Hollow.ttf')
+  src: url('../../../../fonts/pokemonFonts/Pokemon-Hollow.ttf')
     format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -8,22 +8,22 @@
 
 @font-face {
   font-family: 'PokemonSolid';
-  src: url('../../../../public/fonts/pokemonFonts/Pokemon-Solid.ttf')
+  src: url('../../../../fonts/pokemonFonts/Pokemon-Solid.ttf')
     format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 .standardBackground {
-  background-image: url(../../../../../proyecto5-game-hub/public/assets/pokemon/SectionBackground/sectionStandard.png);
+  background-image: url(../../../../../assets/pokemon/SectionBackground/sectionStandard.png);
 }
 
 .waterBackground {
-  background-image: url(../../../../../proyecto5-game-hub/public/assets/pokemon/SectionBackground/waterSection.png);
+  background-image: url(../../../../../assets/pokemon/SectionBackground/waterSection.png);
 }
 
 .fireBackground {
-  background-image: url(../../../../../proyecto5-game-hub/public/assets/pokemon/SectionBackground/fireSection.png);
+  background-image: url(../../../../../assets/pokemon/SectionBackground/fireSection.png);
 }
 
 .sectionMemoryGame {
@@ -44,7 +44,7 @@
 }
 
 .grassBackground {
-  background-image: url(../../../../../proyecto5-game-hub/public/assets/pokemon/SectionBackground/grassSection.png);
+  background-image: url(../../../../../assets/pokemon/SectionBackground/grassSection.png);
 }
 
 @media screen and (min-width: 375px) and (max-width: 1110px) {

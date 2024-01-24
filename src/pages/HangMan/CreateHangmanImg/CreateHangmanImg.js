@@ -7,7 +7,7 @@ export const createHangmanImg = (section) => {
   hangmanImgDiv.classList.add('hangmanImgDiv')
   hangmanImg.classList.add('hangmanImg')
   hangmanImg.id = 'hangmanImage'
-  hangmanImg.src = '../../../../public/assets/hangman/hangman-0.svg'
+  hangmanImg.src = '../../../../assets/hangman/hangman-0.svg'
 
   hangmanImgDiv.append(hangmanImg)
   section.append(hangmanImgDiv)
@@ -20,5 +20,5 @@ export const updateHangmanImage = (step) => {
   }
 
   let imageElement = document.getElementById('hangmanImage')
-  imageElement.src = `../../../../public/assets/hangman/hangman-${step}.svg?${new Date().getTime()}`
+  imageElement.src = `../../../../assets/hangman/hangman-${step}.svg?${new Date().getTime()}`
 }
