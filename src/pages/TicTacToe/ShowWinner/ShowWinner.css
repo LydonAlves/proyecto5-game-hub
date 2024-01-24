@@ -1,0 +1,35 @@
+.winnerDivTicTacToe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: max-content;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-000);
+}
+
+.winnerTitleTicTacToe {
+  font-size: 70px;
+  height: max-content;
+  margin-bottom: var(--margin-l);
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .winnerTitleTicTacToe {
+    font-size: 45px;
+    height: max-content;
+    margin-bottom: var(--margin-l);
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .winnerDivTicTacToe {
+    height: 180px;
+  }
+  .winnerTitleTicTacToe {
+    font-size: 30px;
+    height: max-content;
+    margin-bottom: var(--margin-m);
+  }
+}

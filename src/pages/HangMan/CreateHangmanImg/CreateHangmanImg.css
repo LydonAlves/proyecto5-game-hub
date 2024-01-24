@@ -1,0 +1,38 @@
+.hangmanImgDiv {
+  display: flex;
+  align-items: center;
+  height: 90%;
+}
+
+.hangmanImg {
+  height: 70%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hangmanImg {
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .hangmanImgDiv {
+    justify-content: center;
+    height: 35%;
+    width: 50%;
+  }
+  .hangmanImg {
+    height: 95%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .hangmanImgDiv {
+    justify-content: center;
+    height: 25%;
+    width: 80%;
+  }
+
+  .hangmanImg {
+    height: 90%;
+  }
+}

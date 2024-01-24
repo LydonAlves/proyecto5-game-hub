@@ -1,0 +1,46 @@
+.playerButtonDiv {
+  height: max-content;
+  width: max-content;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--margin-m);
+  gap: var(--gap-s);
+}
+
+.playerButton {
+  height: 55px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerButton > img {
+  height: 20px;
+}
+
+.play {
+  background-color: var(--color-000);
+}
+
+.resetButton {
+  width: 100px;
+  height: 50px;
+  font-size: x-large;
+  background-color: var(--color-000);
+  border: solid 0.5px;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: var(--color-100);
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .resetButton {
+    width: 80px;
+    height: 40px;
+    font-size: large;
+  }
+}

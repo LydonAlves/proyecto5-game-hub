@@ -1,0 +1,66 @@
+.ticTacToeSection {
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../../public/assets/ticTacToe/tic-tac-toe.png);
+  position: relative;
+}
+
+.divTicTacToeInstructions {
+  position: absolute;
+  top: 10px;
+  background-color: var(--color-000);
+  border: rgba(0, 0, 0, 0.575) 1.5px solid;
+  padding: var(--padding-xs);
+  font-size: 15px;
+  text-align: center;
+}
+
+.gameDiv {
+  margin-top: var(--margin-m);
+  align-self: center;
+  display: grid;
+  width: max-content;
+  height: min-content;
+  grid-template-columns: 145px 145px 145px;
+  grid-template-rows: 145px 145px 145px;
+  background-color: var(--color-400);
+  gap: 20px;
+}
+
+.elementDiv {
+  background-color: var(--color-000);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.selected {
+  background-color: var(--color-000);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.gameOver {
+  background-color: rgb(165, 164, 163);
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .gameDiv {
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .gameDiv {
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px;
+    gap: 10px;
+  }
+}

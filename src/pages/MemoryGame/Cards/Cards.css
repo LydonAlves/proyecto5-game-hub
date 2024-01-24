@@ -1,0 +1,97 @@
+.cardsContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-m);
+  align-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cardDiv {
+  height: 150px;
+  width: 100px;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.cardDivInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cardDivClicked .cardDivInner {
+  transform: rotateY('180deg');
+}
+
+.cardClicked {
+  transform: rotateY(180deg);
+}
+
+.cardBack,
+.cardFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront {
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  font-size: small;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.cardBack {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background: url(../../../../public/assets/pokemon/cardBackground.png);
+}
+
+.imgDiv {
+  height: 110px;
+  width: 100px;
+}
+
+.cardImg {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1124px) {
+  .cardsContainer {
+    width: 45%;
+  }
+  .cardDiv {
+    height: 130px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1110px) {
+  .cardsContainer {
+    grid-area: cardsDiv;
+    height: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 570px) {
+  .cardsContainer {
+    padding: 0 var(--padding-s);
+  }
+  .cardDiv {
+    height: 80px;
+    width: 50px;
+  }
+}

@@ -1,0 +1,37 @@
+.incorrectLettersContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 12%;
+  width: 40%;
+  max-width: 250px;
+  border: 0.5px solid var(--color-400);
+  gap: var(--gap-s);
+  padding: 0 2%;
+}
+
+.incorrectLetterDiv {
+  height: max-content;
+  width: 25px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .incorrectLettersDiv {
+    height: 40px;
+    background-color: rebeccapurple;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .incorrectLettersContainer {
+    margin-top: 110px;
+    margin-bottom: 0;
+    width: 70%;
+  }
+}

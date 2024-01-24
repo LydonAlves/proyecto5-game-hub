@@ -1,0 +1,58 @@
+.hangManSection {
+  display: flex;
+  justify-content: space-around;
+  height: 88vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  background: url(../../../../public/assets/hangman/hangmanBackground.png);
+}
+
+.gameLogicDiv {
+  margin-top: 250px;
+  height: 55%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gameLogicDiv {
+    height: 60%;
+    max-height: 300px;
+    width: 45%;
+    min-width: 410px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .hangManSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gameLogicDiv {
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 40%;
+    width: 65%;
+    min-width: 410px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .hangManSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gameLogicDiv {
+    margin-top: 0;
+    margin-bottom: 30px;
+    height: 55%;
+    width: 70%;
+    justify-content: flex-start;
+  }
+}

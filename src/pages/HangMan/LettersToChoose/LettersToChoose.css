@@ -1,0 +1,58 @@
+.letterBoxDiv {
+  height: 20%;
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-xs);
+  margin-bottom: var(--margin-xxl);
+}
+
+.individualLetterButton {
+  height: 30px;
+  width: 37px;
+  background-color: var(--color-000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  border: 0.5px solid var(--color-400);
+}
+
+.individualLetterButton:hover {
+  transform: scale(1.1);
+}
+
+.letterToChoose {
+  font-size: large;
+}
+
+.letterChosen {
+  background-color: rgb(190, 191, 191);
+}
+
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+  .letterBoxDiv {
+    margin-bottom: 15%;
+  }
+  .individualLetterButton {
+    height: 25px;
+    width: 32px;
+  }
+  .letterToChoose {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .letterBoxDiv {
+    margin-bottom: var(--margin-xxl);
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .letterBoxDiv {
+    margin-top: 5px;
+  }
+}

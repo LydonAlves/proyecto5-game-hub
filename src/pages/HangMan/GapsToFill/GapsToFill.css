@@ -1,0 +1,45 @@
+.guessedWordContainer {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  gap: var(--gap-s);
+  margin-bottom: var(--margin-l);
+}
+
+.gapDiv {
+  height: 50px;
+  width: 50px;
+  border-bottom: solid black 2px;
+}
+
+.letterP {
+  font-size: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+  .guessedWordContainer {
+    margin-bottom: var(--margin-m);
+  }
+  .gapDiv {
+    height: 40px;
+    width: 40px;
+  }
+  .letterP {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .guessedWordContainer {
+    margin-bottom: var(--margin-m);
+  }
+  .gapDiv {
+    margin-top: 20px;
+    height: 25px;
+    width: 25px;
+  }
+  .letterP {
+    font-size: 18px;
+  }
+}

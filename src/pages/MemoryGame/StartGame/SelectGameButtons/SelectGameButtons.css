@@ -1,0 +1,44 @@
+.selectGameTypeDiv {
+  width: 60%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--margin-l);
+}
+
+.selectGameButton {
+  height: 50px;
+  width: 100px;
+  background-color: var(--color-000);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: large;
+  cursor: pointer;
+}
+
+.selectGameButton:hover {
+  border: 2px solid rgba(0, 0, 0, 0.39);
+}
+
+.plantButton {
+  background-color: #a4f29e;
+}
+
+.waterButton {
+  background-color: #29c3ff;
+}
+
+.fireButton {
+  background-color: #f26867;
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  .selectGameTypeDiv {
+    gap: 15px;
+    width: max-content;
+  }
+  .selectGameButton {
+    height: 50px;
+    width: 90px;
+  }
+}

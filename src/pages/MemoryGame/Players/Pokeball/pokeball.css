@@ -1,0 +1,204 @@
+.pokeballDiv {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.playerTitle {
+  font-size: 50px;
+  font-family: 'PokemonSolid';
+  color: var(--color-000);
+  letter-spacing: 3px;
+  margin-bottom: var(--margin-m);
+}
+
+.notPlayingNow {
+  font-family: 'PokemonHollow';
+}
+
+.ashContainer .playerTitle {
+  margin-left: var(--margin-s);
+}
+
+.brockContainer .playerTitle {
+  text-align: end;
+  margin-right: var(--margin-l);
+}
+
+.ashContainer .pokeballScoreDiv {
+  margin-top: var(--margin-s);
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.brockContainer .pokeballScoreDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.pokeballImg {
+  height: 40px;
+  margin: var(--margin-m);
+}
+
+.ashContainer .pokeballImg {
+  transform: scaleX(-1);
+  margin-left: var(--margin-xl);
+}
+
+.brockContainer .pokeballImg {
+  margin-right: var(--margin-xl);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+  .playerTitle {
+    width: 100%;
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .brockContainer .playerTitle {
+    text-align: start;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .ashContainer .playerTitle {
+    width: max-content;
+    margin-bottom: 0;
+  }
+
+  .ashContainer .pokeballScoreDiv {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1110px) {
+  .ashContainer .pokeballContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .brockContainer .playerTitle {
+    text-align: end;
+    line-height: 1;
+  }
+
+  .pokeballDiv {
+    display: flex;
+    height: 50px;
+    width: 50px;
+  }
+
+  .ashContainer .pokeballImg {
+    margin: 0;
+  }
+
+  .brockContainer .pokeballScoreDiv {
+    width: 40%;
+  }
+  .brockContainer .pokeballImg {
+    margin: 0px;
+  }
+
+  .brockContainer .pokeballContainer {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 870px) {
+  .playerTitle {
+    width: 380px;
+    min-width: 146px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .ashContainer .pokeballContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .brockContainer .playerTitle {
+    text-align: start;
+  }
+
+  .pokeballDiv {
+    height: 50px;
+    width: 50px;
+  }
+
+  .pokeballScoreDiv {
+    width: 40%;
+  }
+  .brockContainer .pokeballImg {
+    margin-left: 10px;
+  }
+
+  .pokeballImg {
+    height: 30px;
+    margin: var(--margin-s);
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .playerTitle {
+    margin-bottom: 0;
+  }
+
+  .ashContainer .pokeballImg {
+    margin: 0;
+  }
+
+  .ashContainer .pokeballScoreDiv {
+    margin: 0;
+    width: 60px;
+    margin-left: 20px;
+  }
+
+  .brockContainer .pokeballScoreDiv {
+    width: 60px;
+    margin-right: 20px;
+  }
+
+  .brockContainer .pokeballImg {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  section .brockContainer .pokeballContainer {
+    flex-direction: row-reverse;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+  .trainerContainer .pokeballContainer {
+    flex-direction: column;
+  }
+
+  .trainerContainer .playerTitle {
+    min-width: none;
+    width: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .trainerContainer .pokeballContainer {
+    width: 90%;
+  }
+
+  section .brockContainer .pokeballContainer {
+    flex-direction: column;
+    margin-left: 40px;
+  }
+}

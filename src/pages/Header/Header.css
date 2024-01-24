@@ -1,0 +1,39 @@
+header {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-xxl);
+  background-color: var(--color-000);
+}
+
+header > button {
+  width: 100px;
+  height: 45px;
+  background-color: var(--color-500);
+  color: rgba(0, 0, 0, 0.692);
+  border: none;
+  cursor: pointer;
+}
+
+header > button:hover {
+  background-color: var(--color-600);
+}
+
+.gameSelected {
+  border: 1px solid;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  header {
+    gap: var(--gap-l);
+  }
+  header > button {
+    width: 90px;
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+}

@@ -1,0 +1,45 @@
+.divHangmanInstructions {
+  background-color: var(--color-600);
+  position: absolute;
+  top: 15%;
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textHangmanInstructions {
+  font-size: 35px;
+  color: var(--color-000);
+  text-align: center;
+  padding: 0 var(--padding-s);
+  margin-bottom: var(--margin-l);
+}
+
+.startButtonHangman {
+  width: 120px;
+  height: 40px;
+  background-color: var(--color-000);
+  border: rgba(0, 0, 0, 0.541) solid 1px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  .divHangmanInstructions {
+    height: 35%;
+    width: 65%;
+  }
+
+  .textHangmanInstructions {
+    font-size: 25px;
+    margin-bottom: var(--margin-l);
+  }
+
+  .startButtonHangman {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+}

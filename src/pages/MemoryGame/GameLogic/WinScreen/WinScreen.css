@@ -1,0 +1,89 @@
+.fireWins {
+  background-image: url('../../../../../../../assets/pokemon/fireBackground.png');
+}
+
+.waterWins {
+  background-image: url('../../../../../../../assets/pokemon/waterBackground.png');
+}
+
+.grassWins {
+  background-image: url('../../../../../../../assets/pokemon/grassBackground.png');
+}
+
+.winnerDivPokemon {
+  position: absolute;
+  z-index: 999999;
+  height: 600px;
+  width: 800px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winnerText {
+  font-size: 70px;
+  letter-spacing: 6px;
+  font-family: 'PokemonSolid';
+  margin-bottom: var(--margin-m);
+}
+
+.clonedTrainer {
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+}
+
+.clonedTrainer > div {
+  align-self: flex-end;
+  height: 170px;
+  margin: var(--margin-m);
+}
+
+.clonedTrainer > div > img {
+  height: 100%;
+}
+
+.newGameButton {
+  width: 100px;
+  height: 40px;
+  background-color: var(--color-000);
+  opacity: 80%;
+  align-self: flex-end;
+  margin-right: var(--margin-m);
+  border: none;
+}
+
+.newGameButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) and (max-width: 860px) {
+  .winnerDivPokemon {
+    height: 70%;
+    width: 75%;
+  }
+  .winnerText {
+    font-size: 40px;
+    letter-spacing: 6px;
+    margin-bottom: var(--margin-m);
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .winnerDivPokemon {
+    height: 60%;
+    width: 85%;
+  }
+  .winnerText {
+    font-size: 30px;
+    letter-spacing: 6px;
+    line-height: 40px;
+    margin: var(--margin-m) 0;
+    text-align: center;
+  }
+  .clonedTrainer > div {
+    margin-bottom: var(--margin-xs);
+  }
+}

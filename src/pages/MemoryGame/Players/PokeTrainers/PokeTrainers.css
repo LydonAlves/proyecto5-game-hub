@@ -1,0 +1,104 @@
+.trainerContainer {
+  width: 25%;
+}
+
+.trainerDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.trainerAndPokemonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  height: max-content;
+  margin-top: var(--margin-l);
+}
+
+.trainerAndPokemonDiv > div {
+  display: flex;
+  align-items: end;
+  margin-bottom: var(--margin-l);
+}
+
+.trainerAndPokemonDiv > div > img {
+  height: 150px;
+}
+
+.brockTrainerDiv {
+  flex-direction: row-reverse;
+  padding-right: var(--margin-m);
+}
+
+.ashTrainerDiv {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: var(--margin-s);
+}
+
+.ashTrainerDiv > div > img {
+  transform: scaleX(-1);
+}
+
+.trainerImg {
+  height: 300px;
+}
+
+.pokeballContainer {
+  height: 40%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+  .trainerContainer {
+    height: 70%;
+    width: 25%;
+    padding-bottom: var(--margin-xxl);
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1110px) {
+  .trainerContainer {
+    width: 100%;
+  }
+
+  .ashContainer {
+    grid-area: leftDiv;
+  }
+
+  .brockContainer {
+    grid-area: rightDiv;
+    align-items: center;
+    justify-self: flex-end;
+  }
+
+  .pokeballContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    width: 90%;
+  }
+
+  .trainerImg {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .trainerContainer {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+  .trainerContainer {
+    margin-bottom: 60px;
+  }
+
+  .trainerContainer .pokemonOneImg,
+  .trainerContainer .pokemonTwoImg,
+  .trainerContainer .pokemonThreeImg {
+    height: 90%;
+  }
+}
