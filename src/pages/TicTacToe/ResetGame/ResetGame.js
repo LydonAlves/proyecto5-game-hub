@@ -1,5 +1,5 @@
 import { createGrid } from '../CreateBoard/CreateBoard'
-import { addXandO } from '../addXandO/AddXandO'
+import { addXandO } from '../AddXandO/AddXandO'
 
 export const resetGame = (resetButton) => {
   resetButton.addEventListener('click', () => {

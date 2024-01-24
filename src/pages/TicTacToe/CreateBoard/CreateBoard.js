@@ -1,9 +1,9 @@
 import { gridElements } from '../BoardData/BoardData'
 import { createPlayerButtons } from '../PlayerButtons/PlayerButtons'
 import { endGame } from '../EndGame/EndGame'
-import { addXandO } from '../addXandO/AddXandO'
 import './CreateBoard.css'
 import { main } from '../../../../main'
+import { addXandO } from '../AddXandO/AddXandO'
 
 export const createGrid = () => {
   const ticTacToeSection = document.createElement('section')
