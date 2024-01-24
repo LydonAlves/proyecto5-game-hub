@@ -1,4 +1,4 @@
-import './Pokeball.css'
+import './pokeball.css'
 
 export const createPokeball = (pokeballContainer) => {
   const pokeballDiv = document.createElement('div')
