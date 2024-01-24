@@ -1,6 +1,7 @@
 import { createCards } from '../Cards/Cards'
 import { createAsh, createBrock } from '../Players/PokeTrainers/PokeTrainers'
-import { createInitialScreen } from '../StartGame/createInitialScreen/CreateInitialScreen'
+import { createInitialScreen } from '../StartGame/CreateInitialScreen/CreateInitialScreen'
+
 import './SectionMemoryGame.css'
 
 export const sectionMemoryGame = () => {
