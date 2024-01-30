@@ -15,7 +15,6 @@ export const sectionMemoryGame = () => {
 export const CreateSectionMemoryGame = (main) => {
   const section = sectionMemoryGame()
   const sectionDiv = section.querySelector('div')
-
   main.innerHTML = ''
 
   section.classList.add('sectionMemoryGame', 'standardBackground')

@@ -2,3 +2,16 @@
   font-size: xx-large;
   color: var(--color-000);
 }
+
+@media screen and (min-width: 370px) and (max-width: 1110px) {
+  .score {
+    font-size: 28px;
+  }
+  .ashContainer .score {
+    margin-left: 10px;
+  }
+
+  .brockContainer .score {
+    margin-right: 10px;
+  }
+}

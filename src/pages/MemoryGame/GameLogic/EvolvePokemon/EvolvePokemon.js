@@ -1,3 +1,4 @@
+import { main } from '../../../../../main'
 import { sendSelectedImagesToCards } from '../../Cards/Cards'
 import {
   fetchFireTypes,
@@ -7,7 +8,7 @@ import {
 import { winScreen } from '../WinScreen/WinScreen'
 
 export const evolvePokemon = (trainerDiv) => {
-  const section = document.querySelector('section')
+  const section = main.querySelector('.sectionMemoryGame')
   const playerScores = document.querySelectorAll('.score')
   const pokemonOne = trainerDiv.querySelector('.pokemonOneImg')
   const pokemonTwo = trainerDiv.querySelector('.pokemonTwoImg')
@@ -16,6 +17,7 @@ export const evolvePokemon = (trainerDiv) => {
   if (!pokemonOne.classList.contains('hide')) {
     pokemonOne.classList.add('hide')
     pokemonTwo.classList.remove('hide')
+    trainerDiv.classList.add('round-two')
 
     if (section.classList.contains('waterBackground')) {
       sendSelectedImagesToCards(fetchWaterTypes)
@@ -27,6 +29,7 @@ export const evolvePokemon = (trainerDiv) => {
   } else if (!pokemonTwo.classList.contains('hide')) {
     pokemonTwo.classList.add('hide')
     pokemonThree.classList.remove('hide')
+    trainerDiv.classList.add('round-three')
     setTimeout(() => {
       winScreen(trainerDiv)
     }, 1200)

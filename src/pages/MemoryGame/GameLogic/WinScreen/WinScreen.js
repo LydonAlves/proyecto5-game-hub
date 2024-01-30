@@ -2,9 +2,10 @@ import { CreateSectionMemoryGame } from '../../SectionMemoryGame/SectionMemoryGa
 import './WinScreen.css'
 
 const resetGame = (newGameButton) => {
-  console.log(newGameButton)
   newGameButton.addEventListener('click', () => {
     const main = document.querySelector('main')
+    main.innerHTML = ''
+
     CreateSectionMemoryGame(main)
   })
 }
@@ -41,10 +42,11 @@ export const winScreen = (trainer) => {
     'ashTrainerDiv',
     'brockTrainerDiv'
   )
-
-  resetGame(newGameButton)
-  winnerDivPokemon.append(winnerText)
-  winnerDivPokemon.append(clonedTrainer)
-  winnerDivPokemon.append(newGameButton)
-  sectionMemoryGame.append(winnerDivPokemon)
+  setTimeout(() => {
+    resetGame(newGameButton)
+    winnerDivPokemon.append(winnerText)
+    winnerDivPokemon.append(clonedTrainer)
+    winnerDivPokemon.append(newGameButton)
+    sectionMemoryGame.append(winnerDivPokemon)
+  }, 2000)
 }
