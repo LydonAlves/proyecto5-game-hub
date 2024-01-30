@@ -27,7 +27,7 @@ export const roundOver = (allCards) => {
   }
 }
 
-const playerScore = (ashScoreNumber, brockScoreNumber) => {
+export const playerScore = (ashScoreNumber, brockScoreNumber) => {
   const section = main.querySelector('.sectionMemoryGame')
   const showScoreAfterRound = document.createElement('div')
   const playerScoreTitle = document.createElement('h3')
