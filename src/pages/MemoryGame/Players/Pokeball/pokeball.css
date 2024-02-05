@@ -124,11 +124,11 @@
   .ashContainer .pokeballContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
 
   .brockContainer .playerTitle {
     text-align: start;
+    text-align: center;
   }
 
   .pokeballDiv {
